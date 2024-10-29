@@ -1,0 +1,60 @@
+# Configuração do Prettier
+# https://prettier.io/docs/en/options.html
+
+# Tamanho máximo das linhas.
+'printWidth': 80
+
+# Numero de espaços por nível de indentação.
+'tabWidth': 2
+
+# Indentação por tab ou espaço.
+'useTabs': false
+
+# Indentação dentro dos blocos de <script> e <style>
+'vueIndentScriptAndStyle': true
+
+# Ponto e virgula no final da linha.
+'semi': false
+
+# Aspas unicas ou duplas.
+'singleQuote': true
+
+# Decide se propriedades de objetos vão estar entre aspas.
+# Opções: "as-needed" | "consistent" | "preserve"
+'quoteProps': 'consistent'
+
+# Aspas unicas ou duplas em JSX.
+'jsxSingleQuote': false
+
+# Virgula extra.
+# Opções: "none" | "es5" | "all"
+'trailingComma': 'es5'
+
+# Espaços nas laterais internas das chaves. Ex.: { foo, bar }
+'bracketSpacing': true
+
+# Posição do > em componentes multilinha JSX.
+'jsxBracketSameLine': false
+
+# Parentesis em parametro unico de arrow function. Ex.: (x) => x
+# Opções: "always" | "never" | "preserve"
+'arrowParens': 'always'
+
+# Formatação de quebra de linha em texto markdown
+# Opções: "always" | "never" | "preserve"
+'proseWrap': 'preserve'
+
+# Formatação de espaços no HTML
+# Opções: "css" | "strict" | "ignore"
+'htmlWhitespaceSensitivity': 'css'
+
+# Tipo de quebra de linha
+# Opções: "auto" | "lf" | "crlf" | "cr"
+'endOfLine': lf
+
+# Formatar código dentro de outras linguagens. Ex.: JS dentro de HTML.
+# Opções: "auto" | "off"
+'embeddedLanguageFormatting': 'auto'
+
+# Apenas um atributo HTML, Vue, ou JSX por linha.
+'singleAttributePerLine': false

@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Ânima",
+    "ogTitle": "Ânima",
+    "description": "Teste Front Anima.",
+    "ogDescription": "Teste Front Anima."
+  },
+  "header": {
+    "type": "LayoutHeaderDefault",
+    "data": {
+      "logo": "icon-logo",
+      "links": [
+        {
+          "id": 1,
+          "text": "Mais Informações",
+          "to": "#mais-informacoes"
+        },
+        {
+          "id": 2,
+          "text": "Nossos Pilares",
+          "to": "#nossos-pilares"
+        }
+      ],
+      "action": {
+        "text": "Inscreva-se",
+        "to": "#inscreva-se"
+      }
+    }
+  },
+  "footer": {
+    "type": "LazyLayoutFooterDefault",
+    "data": {
+      "logo": "icon-logo-white",
+      "link": {
+        "text": "Inscreva-se",
+        "to": "#inscreva-se"
+      },
+      "medias": [
+        {
+          "id": 1,
+          "icon": "icon-facebook",
+          "to": "https://www.facebook.com/AnimaEducacao"
+        },
+        {
+          "id": 2,
+          "icon": "icon-twitter",
+          "to": "https://x.com/animaedu"
+        },
+        {
+          "id": 3,
+          "icon": "icon-youtube",
+          "to": "https://www.youtube.com/channel/UCqJut7vI1PgxaOqCjSevjJQ"
+        },
+        {
+          "id": 4,
+          "icon": "icon-instagram",
+          "to": "https://www.instagram.com/anima.educacao/"
+        },
+        {
+          "id": 5,
+          "icon": "icon-linkedin",
+          "to": "https://www.linkedin.com/company/animaeducacao"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "type": "SectionCarouselDefault",
+      "data": {
+        "id": "hero",
+        "images": [
+          {
+            "id": 1,
+            "src": "banner-azul.webp",
+            "alt": "Banner pós-graduação azul"
+          },
+          {
+            "id": 2,
+            "src": "banner-verde.webp",
+            "alt": "Banner pós-graduação verde"
+          },
+          {
+            "id": 3,
+            "src": "banner-laranja.webp",
+            "alt": "Banner pós-graduação laranja"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SectionImageAndTextDefault",
+      "data": {
+        "id": "mais-informacoes",
+        "image": {
+          "src": "/images/banner-roxo.webp",
+          "alt": "Banner pós-graduação roxo"
+        },
+        "title": {
+          "type": "h2",
+          "text": "Seja protagonista, <b>o futuro já começou!</b>"
+        },
+        "subtitle": {
+          "type": "h3",
+          "text": "<b>Venha conosco, nós te ajudamos!</b>"
+        },
+        "paragraph": {
+          "text": "É hora de iniciar uma nova etapa! Sabemos que o momento pode ser assustador, mas não se preocupe.<br/> Quebramos as barreiras entre presencial e virtual e criamos um modelo inovador, exclusivo e com professores prontos para te preparar para os desafios reais do mercado!<br/> A nossa missão não é só pensar no futuro da educação, é fazê-lo chegar antes."
+        }
+      }
+    },
+    {
+      "type": "LazySectionCardsDefault",
+      "data": {
+        "id": "nossos-pilares",
+        "title": {
+          "type": "h2",
+          "text": "Conheça os pilares da<br/><b>Ânima Educação.</b>"
+        },
+        "cards": [
+          {
+            "id": 1,
+            "icon": "icon-star",
+            "title": {
+              "type": "h3",
+              "text": "Espaços inspiradores"
+            },
+            "paragraph": {
+              "text": "Destaque entre as universidades com a melhor infraestrutura do Brasil, oferecemos metodologias inovadoras e equipamentos de última geração."
+            }
+          },
+          {
+            "id": 2,
+            "icon": "icon-light-bulb",
+            "title": {
+              "type": "h3",
+              "text": "Inovação e Criatividade"
+            },
+            "paragraph": {
+              "text": "Criamos novos padrões de mercado, oferecendo cursos inovadores e disruptivos que preparam você para o futuro."
+            }
+          },
+          {
+            "id": 3,
+            "icon": "icon-connections",
+            "title": {
+              "type": "h3",
+              "text": "Internacionalização"
+            },
+            "paragraph": {
+              "text": "Conectada com o Novo Futuro e novas Tendências, a Anhembi Morumbi integra um ecossistema global para preparar você para protagonizar o Novo Mundo."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "LazySectionFormDefault",
+      "data": {
+        "id": "inscreva-se",
+        "title": {
+          "type": "h2",
+          "text": "Tem interesse e está em busca de <br/><b>mais informações?</b>"
+        },
+        "subtitle": {
+          "type": "h3",
+          "text": "Preencha o formulário abaixo que entraremos em contato."
+        },
+        "inputs": {
+          "name": {
+            "id": "name",
+            "label": "Nome Completo *",
+            "placeholder": "Digite seu nome completo"
+          },
+          "email": {
+            "id": "email",
+            "label": "E-mail *",
+            "placeholder": "email@email.com"
+          },
+          "phone": {
+            "id": "phone",
+            "label": "Telefone *",
+            "placeholder": "(99) 9 9999-9999"
+          },
+          "institution": {
+            "id": "institution",
+            "label": "Instituição *",
+            "placeholder": "Selecione a instituição de interesse",
+            "options": [
+              "AGES",
+              "ANHENBI MORUMBI",
+              "BSP",
+              "FADERGS",
+              "FASEH",
+              "FPB",
+              "IBMR",
+              "MILTON CAMPOS",
+              "UNA",
+              "UNIBH",
+              "UNICURITIBA",
+              "UNIFACS",
+              "UNIFG BA",
+              "UNIFG PE",
+              "UNIRITTER",
+              "UNISOCIESC",
+              "UNISUL",
+              "UNP",
+              "USJT"
+            ]
+          }
+        },
+        "finePrint": {
+          "text": "Nós usaremos seus dados para entrar em contato com você sobre as informações solicitadas neste formulário e sobre outras informações correlacionadas que podem ser de seu interesse. Você pode cancelar o envio da divulgação, a qualquer momento, utilizando o opt-out existente nas mensagens encaminhadas por nós."
+        },
+        "submit": {
+          "to": "/api/form",
+          "successMessage": "Maravilha, em breve entraremos em contato",
+          "errorMessage": "Ocorreu um erro, tente novamente, ou entre em contato"
+        },
+        "submitButton": {
+          "text": "Enviar"
+        }
+      }
+    }
+  ]
+}

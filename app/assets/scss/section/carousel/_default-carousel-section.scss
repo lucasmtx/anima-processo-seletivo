@@ -1,0 +1,89 @@
+///////////////////////////////////////
+/// Carrossel default
+///////////////////////////////////////
+
+@use '../../abstracts/' as *;
+
+.default-carousel {
+  background: white;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+
+  &__container {
+    @include container;
+  }
+
+  &__carousel {
+    overflow: visible !important;
+    aspect-ratio: 1/1;
+
+    @include breakpoint-md {
+      aspect-ratio: unset;
+    }
+  }
+
+  &__indicator {
+    border-radius: 9999px;
+    justify-content: center;
+    color: white !important;
+
+    &--active {
+      min-width: 1.75rem;
+      background-color: white !important;
+    }
+  }
+
+  &__left-arrow {
+    display: none;
+
+    @media (min-width: 1100px) {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      border-radius: 9999px;
+      left: 0;
+      transform: translate(-3.5rem, -0.7rem);
+      background: $primary;
+      padding: 0.75rem;
+    }
+
+    svg {
+      max-width: 100%;
+      max-height: 100%;
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  &__right-arrow {
+    display: none;
+
+    @media (min-width: 1100px) {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      border-radius: 9999px;
+      right: 0;
+      transform: translate(3.5rem, -0.7rem);
+      background: $primary;
+      padding: 0.75rem;
+    }
+
+    svg {
+      max-width: 100%;
+      max-height: 100%;
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+}

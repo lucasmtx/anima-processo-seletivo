@@ -1,0 +1,26 @@
+///////////////////////////////////////
+/// Mixins de container
+///////////////////////////////////////
+
+@use './breakpoints' as *;
+
+@mixin container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  @include breakpoint-sm {
+    max-width: 540px;
+  }
+  @include breakpoint-md {
+    max-width: 720px;
+  }
+  @include breakpoint-lg {
+    max-width: 960px;
+  }
+  @include breakpoint-xl {
+    max-width: 1140px;
+  }
+}

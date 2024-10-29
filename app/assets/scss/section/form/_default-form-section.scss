@@ -1,0 +1,148 @@
+///////////////////////////////////////
+/// Cards default
+///////////////////////////////////////
+
+@use '../../abstracts/' as *;
+
+.default-form {
+  background: $primary;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include container;
+  }
+
+  &__narrow-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    @include breakpoint-md {
+      max-width: 34rem;
+    }
+  }
+
+  &__title {
+    @include typography-2xl-thin;
+    color: $white;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+    @include breakpoint-xl {
+      @include typography-3xl-thin;
+    }
+
+    @include breakpoint-2xl {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    @include typography-xl-thin;
+    color: $white;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__label {
+    display: block;
+    @include typography-md-thin;
+    color: $white;
+    padding-bottom: 0.3rem;
+  }
+
+  &__input {
+    width: 100%;
+
+    input {
+      @include typography-md-thin;
+      background: $white !important;
+
+      &::placeholder {
+        color: #888;
+      }
+    }
+
+    button {
+      background: $white !important;
+      &span.truncate {
+        color: #888 !important;
+      }
+    }
+
+    li {
+      color: $secondary;
+      @include typography-xl-thin;
+      border-bottom: 1px solid $border;
+      border-radius: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__error {
+    display: block;
+    @include typography-md-thin;
+    background: $white;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    color: rgb(239 68 68);
+  }
+
+  &__fineprint {
+    @include typography-sm-thin;
+    color: $white;
+    padding-bottom: 1.2rem;
+  }
+
+  &__submit-button {
+    @include typography-md-bold;
+    background: $white;
+    color: $secondary;
+    border: 1px solid $white;
+    transition:
+      color 0.3s,
+      border 0.3s;
+    border-radius: 0.6rem;
+    padding: 0.8rem 6.4rem;
+    letter-spacing: 0.05rem;
+
+    &:hover {
+      color: $white;
+      background: $primary;
+    }
+
+    &:disabled {
+      border-color: #e4add2;
+      background: #e4add2;
+
+      &:hover {
+        color: #e4add2;
+        background: $primary;
+      }
+    }
+  }
+
+  &__submit-message {
+    display: block;
+    @include typography-md-thin;
+    color: #155724;
+    background: #d4edda;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+  }
+}

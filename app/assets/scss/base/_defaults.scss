@@ -1,0 +1,14 @@
+///////////////////////////////////////
+/// TextAndImage default
+///////////////////////////////////////
+
+@use '../abstracts/' as *;
+
+html {
+  background: $white;
+  color: $text;
+}
+
+b {
+  font-weight: 700;
+}

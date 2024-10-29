@@ -1,0 +1,82 @@
+///////////////////////////////////////
+/// Footer default
+///////////////////////////////////////
+@use '../../abstracts/' as *;
+
+.footer-default {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background: $secondary;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    @include container;
+
+    @include breakpoint-md {
+      align-items: center;
+      flex-flow: row nowrap;
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+    width: 4.688rem;
+    height: 3.5rem;
+  }
+
+  &__right-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+
+    @include breakpoint-md {
+      width: 16rem;
+    }
+  }
+
+  &__navigation-button {
+    @include typography-md-bold;
+    border: $white 1px solid;
+    border-radius: 0.6rem;
+    width: 100%;
+    padding: 0.8rem 1.125rem;
+    color: $secondary;
+    background: $white;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    transition:
+      background 0.3s,
+      color 0.3s;
+
+    &:hover {
+      color: $white;
+      background: $secondary;
+    }
+  }
+
+  &__medias {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+
+  &__media-item {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+
+  &__media {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+}

@@ -1,0 +1,46 @@
+///////////////////////////////////////
+/// Classes para acessibilidade
+/// Para texto e elementos ocultos
+///////////////////////////////////////
+
+.visually-hidden {
+  /* Essa classe é utilizada para ocultar elementos de texto,
+  mantendo esse texto acessível para leitores de tela. */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+.visually-hidden-focusable {
+  /* Essa classe é utilizada para ocultar visualmente os
+  elementos criados para navegação pelo teclado. */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.visually-hidden-focusable:focus {
+  /* Essa classe é utilizada para exibir os elementos ocultos
+  quando o usuario focar nele com o teclado. */
+
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}

@@ -1,0 +1,88 @@
+///////////////////////////////////////
+/// Cards default
+///////////////////////////////////////
+
+@use '../../abstracts/' as *;
+
+.default-cards {
+  background: $white;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    @include typography-2xl-thin;
+    color: $text;
+    text-align: center;
+
+    @include breakpoint-lg {
+      @include typography-3xl-thin;
+    }
+
+    @include breakpoint-2xl {
+      @include typography-4xl-thin;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 0.5rem;
+
+    @include breakpoint-lg {
+      flex-flow: row nowrap;
+      gap: 2rem;
+    }
+  }
+
+  &__card {
+    flex: 1;
+    position: relative;
+    border: 1px solid $border;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+
+    @include breakpoint-lg {
+      max-width: 16.2rem;
+    }
+  }
+
+  &__icon-wrapper {
+    position: absolute;
+
+    top: -4rem;
+    left: calc(50% - 2.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 9999px;
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &__card-title {
+    @include typography-xl-bold;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  &__card-paragraph {
+    @include typography-sm-thin;
+    font-size: 0.925rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}

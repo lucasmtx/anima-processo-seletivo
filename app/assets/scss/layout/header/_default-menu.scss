@@ -1,0 +1,103 @@
+///////////////////////////////////////
+/// Menu default
+///////////////////////////////////////
+
+@use '../../abstracts/' as *;
+
+.default-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  pointer-events: none;
+
+  &__backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background: transparent;
+    pointer-events: none;
+    transition: background 0.3s;
+
+    &.show-backdrop {
+      background: rgba($primary, 70%);
+      pointer-events: all;
+    }
+  }
+
+  &__layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-flow: column nowrap;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    height: 2rem;
+  }
+
+  &__close-button {
+    display: none;
+    height: 2rem;
+    width: 2rem;
+    pointer-events: all;
+
+    &.show-button {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    // svg {
+    //   height: 100%;
+    //   width: 100%;
+    //   path {
+    //     fill: $white;
+    //   }
+    // }
+  }
+
+  &__content {
+    padding: 1rem;
+    background: $white;
+    border-radius: 0.6rem;
+    height: 100%;
+    transform: translateX(-120%);
+    transition: transform 0.3s;
+    pointer-events: all;
+
+    &.show-content {
+      transform: translateX(0);
+    }
+  }
+
+  &__link-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.6rem;
+  }
+
+  &__link {
+    @include typography-sm-bold;
+    color: $secondary;
+    text-decoration: underline;
+    transition:
+      color 0.3s,
+      text-decoration 0.3s;
+
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}

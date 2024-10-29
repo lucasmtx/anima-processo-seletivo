@@ -1,0 +1,73 @@
+///////////////////////////////////////
+/// TextAndImage default
+///////////////////////////////////////
+
+@use '../../abstracts/' as *;
+
+.default-text-and-image {
+  background: $white;
+  padding-top: 8rem;
+  padding-bottom: 6.25rem;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    position: relative;
+    @include typography-2xl-thin;
+    color: $text;
+    padding-top: 2.3rem;
+    padding-bottom: 3.5rem;
+
+    @include breakpoint-lg {
+      @include typography-3xl-thin;
+    }
+
+    @include breakpoint-2xl {
+      @include typography-4xl-thin;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $primary;
+      width: 11.2rem;
+      height: 4px;
+    }
+  }
+
+  &__grid {
+    gap: 3.3rem;
+
+    @include breakpoint-lg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__right-items {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 1.5rem;
+    gap: 1rem;
+  }
+
+  &__subtitle {
+    @include typography-2xl-thin;
+    color: $text;
+  }
+
+  &__paragraph {
+    @include typography-xl-thin;
+    color: $text;
+  }
+}

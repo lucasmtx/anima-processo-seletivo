@@ -1,0 +1,41 @@
+///////////////////////////////////////
+/// Mixins de breakpoint
+///////////////////////////////////////
+
+@use '../variables/breakpoints' as *;
+
+@mixin breakpoint-sm {
+  @media (min-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-md {
+  @media (min-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-lg {
+  @media (min-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-xl {
+  @media (min-width: #{$breakpoint-xl}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-2xl {
+  @media (min-width: #{$breakpoint-2xl}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-3xl {
+  @media (min-width: #{$breakpoint-3xl}) {
+    @content;
+  }
+}
